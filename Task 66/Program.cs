@@ -1,7 +1,9 @@
 ﻿int sum(int m, int n)
 {
-    if(m>n) return (((m+n)*(m-n+1))/2);
-    else return (((m+n)*(n-m+1))/2);
+    int result =0;
+    if(m>n) result =((m+n)*(m-n+1))/2;
+    else result = ((m+n)*(n-m+1))/2;
+    return result;
 }
 
 Console.Write("Введите число M: ");
