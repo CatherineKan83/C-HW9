@@ -1,7 +1,9 @@
 ﻿string Numbers(int c, int e)
 {
-    if(c>=e) return $" {c} " + Numbers(c-1,e);
-    else return String.Empty;
+    string temp=String.Empty;
+    if(c>=e) temp= $" {c} " + Numbers(c-1,e);
+    return temp;
+
 }
 Console.Write("Введите число: ");
 int N= Convert.ToInt32(Console.ReadLine());
